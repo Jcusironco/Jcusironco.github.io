@@ -1,0 +1,151 @@
+main {
+  margin-top: 20px;
+}
+
+body {
+  background: #BFEFFF;
+  background: radial-gradient(ellipse at center, #3b83bd 0%, #BFEFFF 70%);
+  background-size: 100%;
+  color: #333333;
+  font-family: 'Arial', monospace;
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-border {
+  border: 2px solid blue;
+  border-radius: 30px;
+  padding: 20px;
+}
+.card {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #1c4e80;
+  border-radius: 30px;
+  background-color: #f2f8fd;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1c4e80;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-container input[type="text"],
+.input-container input[type="password"] {
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.input-container input[type="text"]:focus,
+.input-container input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  background-color: #1c4e80;
+  border: none;
+  color: white;
+  padding: 1px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 6px 1px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+a {
+  color: #1c4e80;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #333;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.toggle-password i {
+  color: #ccc;
+}
+
+.toggle-password i.visible {
+  background-image: url("https://img.icons8.com/material-outlined/24/000000/visible--v2.png");
+  background-size: 97%;
+  text-indent: -9999px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.toggle-password i.hidden {
+  background-image: url("https://img.icons8.com/material-outlined/24/000000/invisible--v2.png");
+  background-size: 97%;
+  text-indent: -9999px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+
+  .toggle-password-active i.visible {
+    background-image: url("https://img.icons8.com/material-outlined/24/000000/visible--v2.png");
+  }
+
+  .toggle-password i.hidden {
+      background-image: url("https://img.icons8.com/material-outlined/24/000000/invisible--v2.png");
+      background-size: 97%;
+      text-indent: -9999px;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+  }
+
+  .toggle-password-active i.visible {
+      background-image: url("https://img.icons8.com/material-outlined/24/000000/visible--v2.png");
+  }
+
+  .toggle-password-active i.hidden {
+      background-image: url("https://img.icons8.com/material-outlined/24/000000/invisible--v2.png");
+  }
+
+  .toggle-password input[type="password"] {
+      padding-right: 30px;
